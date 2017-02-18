@@ -26,10 +26,10 @@ def make_change(amount)
 end
 
 # Sandbox testing
-# p make_change(8)
-# p make_change(11)
-# p make_change(19)
-# p make_change(27)
-# p make_change(31)
-# p make_change(48)
-# p make_change(93)
+# p make_change(8)  # {:nickel=>1, :penny=>3}
+# p make_change(11)  # {:dime=>1, :penny=>1}
+# p make_change(19)  # {:dime=>1, :nickel=>1, :penny=>4}
+# p make_change(27)  # {:quarter=>1, :penny=>2}
+# p make_change(31)  # {:quarter=>1, :nickel=>1, :penny=>1}
+# p make_change(48)  # {:quarter=>1, :dime=>2, :penny=>3}
+# p make_change(93)  # {:quarter=>3, :dime=>1, :nickel=>1, :penny=>3}
