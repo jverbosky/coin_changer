@@ -1,0 +1,20 @@
+Here's your change!
+
+<% change.each do |coin, count| %>
+  <% if count > 1 %>
+    <% if coin == :penny %>
+      <p><%= count %> pennies</p>
+    <% else %>
+      <p><%= count %> <%= coin %>s</p>
+    <% end  %>
+  <% else %>
+    <p><%= count %> <%= coin %></p>
+  <% end %>
+<% end %>
+
+Would you like to make more?
+
+<form method = "post" action = "your_change">
+  <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
+  <input type = "submit">
+</form>
