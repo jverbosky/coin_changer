@@ -51,6 +51,12 @@ input {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
+.border {
+  border-color: #216C2A;
+  border-width: 3px;
+  border-style: solid;
+}
+
 DIV.table {
   display: table;
   background-color: white;

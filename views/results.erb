@@ -1,10 +1,20 @@
 <hr>
 
 <div>
-  <h3>Here's the coins for <%= amount %> cents!</h3>
+  <h3>
+    <% response = "" %>
+    <% if amount == 0 %>
+      <% response = "No coins for you!" %>
+    <% elsif amount == 1 %>
+      <% response = "Here's your penny!" %>
+    <% else %>
+      <% response = "Here's the coins for #{amount} cents!" %>
+    <% end %>
+    <%= response %>
+  </h3>
 </div>
 
-<div class="table">
+<div class="table border">
   <div class ="tr">
     <% change.each do |coin, count| %>
       <% if count > 1 %>
