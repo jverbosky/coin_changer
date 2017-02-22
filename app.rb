@@ -9,5 +9,5 @@ end
 post '/your_change' do
   amount = params[:amount].to_i
   change = make_change(amount)
-  erb :results, locals: {change: change}
+  erb :results, locals: {change: change, amount: amount}
 end

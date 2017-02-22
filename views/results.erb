@@ -1,30 +1,25 @@
 <hr>
 
-<h4>Here's your change!</h4>
-
-<div class="table">
-  <% change.each do |coin, count| %>
-    <% if count > 1 %>
-      <% if coin == :penny %>
-        <div class ="tr">
-          <span class="td"><p><%= count %> pennies</p></span>
-          <span class="td"<img src="/images/<%= coin %>_1.jpg"></span>
-        </div>
+<div class="red center-block">
+  <h4>Here's the coins for <%= amount %> cents!</h4>
+</div>
+<div class="table blue">
+  <div class ="tr">
+    <% change.each do |coin, count| %>
+      <% if count > 1 %>
+        <% if coin == :penny %>
+          <span class="td"><img src="images/<%= coin %>_1.jpg"><p><%= count %> pennies</p></span>
+        <% else %>
+          <span class="td"><img src="images/<%= coin %>_1.jpg"><p><%= count %> <%= coin %>s</p></span>
+        <% end  %>
       <% else %>
-        <div class ="tr">
-          <span class="td"><p><%= count %> <%= coin %>s</p></span>
-          <span class="td"><img src="images/<%= coin %>_1.jpg"></span>
-        </div>
-      <% end  %>
-    <% else %>
-      <div class ="tr">
-        <span class="td"><p><%= count %> <%= coin %></p></span>
-        <span class="td"><img src="images/<%= coin %>_1.jpg"></span>
-      </div>
+        <span class="td"><img src="images/<%= coin %>_1.jpg"><p><%= count %> <%= coin %></p></span>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 
 <hr>
 
-<p>Would you like to make more?</p>
+<div class="red center-block">
+  <h5>Would you like to make more?</h5>

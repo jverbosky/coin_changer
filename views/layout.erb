@@ -12,12 +12,12 @@
     </header>
     <section>
 
-      <%= yield %>  <!-- load unique content from other .erb files -->
-
-      <form method = "post" action = "your_change">
-        <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
-        <input type = "submit">
-      </form>
+        <%= yield %>  <!-- load unique content from other .erb files -->
+        <form method = "post" action = "your_change">
+          <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
+          <input type = "submit">
+        </form>
+      </div>
       <br>
       <hr>
 
