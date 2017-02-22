@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href="/images/favicon.ico?" type="image/x-icon">   added to get favicon to load -->
+  </head>
+  <body>
+    <header>
+      <h1>Coin Changer</h1>
+    </header>
+    <section>
+
+      <%= yield %>  <!-- load unique content from other .erb files -->
+
+      <form method = "post" action = "your_change">
+        <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
+        <input type = "submit">
+      </form>
+      <br>
+      <hr>
+
+
+
+    </section>
+  </body>
+</html>

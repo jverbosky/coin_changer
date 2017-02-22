@@ -1,0 +1,4 @@
+quarter:	23x12	112x112
+dime:		146x26	85x85
+nickel:		250x18	99x99
+penny:		365x23	90x90

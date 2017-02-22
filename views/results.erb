@@ -1,20 +1,30 @@
-Here's your change!
+<hr>
 
-<% change.each do |coin, count| %>
-  <% if count > 1 %>
-    <% if coin == :penny %>
-      <p><%= count %> pennies</p>
+<h4>Here's your change!</h4>
+
+<div class="table">
+  <% change.each do |coin, count| %>
+    <% if count > 1 %>
+      <% if coin == :penny %>
+        <div class ="tr">
+          <span class="td"><p><%= count %> pennies</p></span>
+          <span class="td"<img src="/images/<%= coin %>_1.jpg"></span>
+        </div>
+      <% else %>
+        <div class ="tr">
+          <span class="td"><p><%= count %> <%= coin %>s</p></span>
+          <span class="td"><img src="images/<%= coin %>_1.jpg"></span>
+        </div>
+      <% end  %>
     <% else %>
-      <p><%= count %> <%= coin %>s</p>
-    <% end  %>
-  <% else %>
-    <p><%= count %> <%= coin %></p>
+      <div class ="tr">
+        <span class="td"><p><%= count %> <%= coin %></p></span>
+        <span class="td"><img src="images/<%= coin %>_1.jpg"></span>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 
-Would you like to make more?
+<hr>
 
-<form method = "post" action = "your_change">
-  <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
-  <input type = "submit">
-</form>
+<p>Would you like to make more?</p>
