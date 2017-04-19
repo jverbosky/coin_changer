@@ -13,7 +13,7 @@
     <section>
 
         <%= yield %>  <!-- load unique content from other .erb files -->
-        <form method = "post" action = "your_change">
+        <form method = "post" action = "your_change">  <!-- just learned - leave out action, defaults to action = "/" -->
           <input type = "text" name = "amount">  <!-- tried type = "number" but didn't work -->
           <input type = "submit">
         </form>
