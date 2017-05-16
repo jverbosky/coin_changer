@@ -17,7 +17,7 @@ To run the coin changer app locally:
 
 	ruby app.rb
 
-To open the app locally once it is running via *rackup*, use the following URL:
+To open the app locally once it is running, use the following URL:
 
 [http://localhost:4567](http://localhost:4567/)
 
