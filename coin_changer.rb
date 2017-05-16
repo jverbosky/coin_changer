@@ -25,7 +25,7 @@ def make_change(amount)
   return coin_count
 end
 
-puts make_change(93)
+# puts make_change(93)
 
 # Sandbox testing
 # p make_change(8)  # {:nickel=>1, :penny=>3}

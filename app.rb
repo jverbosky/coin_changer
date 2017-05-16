@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader' if development?  # automatically reload app.rb on save via sinatra-contrib gem
+# require 'sinatra/reloader' if development?  # automatically reload app.rb on save via sinatra-contrib gem
 require_relative 'coin_changer.rb'
 
 get '/' do
